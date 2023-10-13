@@ -838,7 +838,6 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/tablet-bg.jpg);
-    height: 600px;
     padding: 112px 0;
     max-width: 768px;
   }
@@ -861,22 +860,26 @@ body {
       line-height: 60px;
     }
 
+    .button-order {
+      margin-top: 36px;
+    }
+
     /* Секция характеристики */
 
     .characteristics {
-      padding: 120px 0;
+      padding: 96px 0;
     }
   }
 
   .cards-characteristics {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
     /* width: 325px; */
   }
 
   .list-characteristics {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 72px 24px;
   }
 
   .characteristics-subtitle {
@@ -893,7 +896,6 @@ body {
   }
 
   .order {
-    height: 600px;
     padding: 188px 0;
     max-width: 1440px;
     background-image: linear-gradient(
@@ -924,6 +926,7 @@ body {
 
   .button-order {
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 48px;
   }
 
   /* Секция характеристики */
