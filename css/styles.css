@@ -436,12 +436,16 @@ body {
 /* Футер */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 97.5px 0;
 }
 
 .container-footer {
   display: flex;
-  align-items: baseline;
+  /* align-items: baseline; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .logo-footer {
@@ -455,6 +459,7 @@ body {
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
+  /* padding-left: 86px; */
 }
 .studio-footer {
   color: #f4f4fd;
@@ -466,6 +471,10 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
   width: 264px;
+}
+
+.icon-text-footer-wrapper {
+  margin-top: 72px;
 }
 .svg-footer-icon-box {
   display: flex;
@@ -511,7 +520,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 
 .social-media {
@@ -521,6 +530,11 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
+}
+
+.form-text-footer-wrapper {
+  margin-top: 72px;
 }
 
 .title-form-footer {
@@ -530,14 +544,18 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 80px;
+  /* padding-left: 80px; */
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-form {
-  margin-left: 80px;
+  /* margin-left: 80px; */
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-form-group {
   padding: 0;
@@ -885,6 +903,39 @@ body {
   .characteristics-subtitle {
     text-align: start;
   }
+
+  /* Футер */
+  .container-footer {
+    flex-direction: row;
+    text-align: left;
+    flex-wrap: wrap;
+    width: calc((100%-72px) / 2);
+    align-items: baseline;
+    gap: 24px;
+  }
+
+  .logo-text-footer-wrapper {
+    margin-left: 108px;
+  }
+
+  .icon-text-footer-wrapper {
+    margin-top: 0;
+  }
+
+  .social-media {
+    text-align: start;
+  }
+
+  .form-text-footer-wrapper {
+    margin-left: 108px;
+  }
+  .title-form-footer {
+    text-align: start;
+  }
+
+  .footer-form {
+    flex-direction: row;
+  }
 }
 
 /* Ноутбук */
@@ -950,5 +1001,26 @@ body {
 
   .characteristics-subtitle {
     font-size: 20px;
+  }
+
+  /* Футер */
+  .footer {
+    padding: 100px 0;
+  }
+
+  .container-footer {
+    width: 100%;
+  }
+
+  .logo-text-footer-wrapper {
+    margin-right: 120px;
+  }
+
+  .icon-text-footer-wrapper {
+    margin-top: 0;
+  }
+
+  .form-text-footer-wrapper {
+    margin-top: 0;
   }
 }
