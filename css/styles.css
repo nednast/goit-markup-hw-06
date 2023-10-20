@@ -32,7 +32,8 @@ body {
 .container {
   /* width: 1158px; */
   width: 320px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
+  padding: 0 28px;
   margin: 0 auto;
 }
 
@@ -321,7 +322,9 @@ body {
 .team-list {
   list-style: none;
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  /* gap: 24px; */
+  gap: 72px;
 }
 .card-team {
   background-color: #ffffff;
@@ -332,7 +335,8 @@ body {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  width: 100%;
 }
 
 .team-text-wrapper {
@@ -904,6 +908,17 @@ body {
     text-align: start;
   }
 
+  /* Секция команда */
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .card-team {
+    width: calc((100% - 24px) / 2);
+  }
+
   /* Футер */
   .container-footer {
     flex-direction: row;
@@ -944,6 +959,7 @@ body {
   /* Секция заказа */
   .container {
     width: 1158px;
+    padding: 0 15px;
   }
 
   .order {
@@ -1001,6 +1017,16 @@ body {
 
   .characteristics-subtitle {
     font-size: 20px;
+  }
+
+  /* Секция команда */
+  .team-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .card-team {
+    width: calc((100% - 72px) / 4);
   }
 
   /* Футер */
