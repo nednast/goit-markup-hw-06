@@ -28,8 +28,11 @@
       <div class="container-head container">
         <nav class="nav-header">
           <a class="logo" href="./index.html"
-            >Web<span class="studio">Studio</span></a
+            >Web<span class="studio">Studio</мspan></a
           >
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
           <ul class="menu">
             <li class="menu-card">
               <a class="menu-link current" href="./index.html">Studio</a>
@@ -45,7 +48,7 @@
 
     <!-- Секция контакты  -->
 
-    <address class="contacts">
+  <address class="contacts ">
           <ul class="list-contacts">
             <li class="cards-contacts">
               <a class="cards-contacts-link" href="mailto:info@devstudio.com"
@@ -133,7 +136,7 @@
       </section>
       <!-- Секция команда -->
       <section class="team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="card-team">
@@ -331,7 +334,7 @@
                   width="360"
                   height="300"
                 />
-                 </picture>
+                </picture>
                 <p class="hover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -348,7 +351,7 @@
                 <picture>
                   <source srcset="./images/imgCashless.jpg 1x, ./images/imgCashless-2x.jpg 2x" media="(min-width: 1158px)">
                   <source srcset="./images/imgCashless-tab.jpg 1x, ./images/imgCashless-tab-2x.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/imgCashless-mob.jpg 1x, ./images/imgCashless-mob-2x.jpg 2x" media="(max-width: 1158px)">>
+                  <source srcset="./images/imgCashless-mob.jpg 1x, ./images/imgCashless-mob-2x.jpg 2x" media="(max-width: 1158px)">
                 <img
                   src="./images/imgCashless.jpg"
                   alt="Cashless Payment"
@@ -372,7 +375,7 @@
                 <picture>
                   <source srcset="./images/imgMeditation.jpg 1x, ./images/imgMeditation-2x.jpg 2x" media="(min-width: 1158px)">
                   <source srcset="./images/imgMeditation-tab.jpg 1x, ./images/imgMeditation-tab-2x.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/imgMeditation-mob.jpg 1x, ./images/imgMeditation-mob-2x.jpg 2x" media="(max-width: 1158px)">>
+                  <source srcset="./images/imgMeditation-mob.jpg 1x, ./images/imgMeditation-mob-2x.jpg 2x" media="(max-width: 1158px)">
                 
                 <img
                   src="./images/imgMeditation.jpg"
@@ -397,7 +400,7 @@
                 <picture>
                   <source srcset="./images/imgTaxi.jpg 1x, ./images/imgTaxi-2x.jpg 2x" media="(min-width: 1158px)">
                   <source srcset="./images/imgTaxi-tab.jpg 1x, ./images/imgTaxi-tab-2x.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/imgTaxi-mob.jpg 1x, ./images/imgTaxi-mob-2x.jpg 2x" media="(max-width: 1158px)">>
+                  <source srcset="./images/imgTaxi-mob.jpg 1x, ./images/imgTaxi-mob-2x.jpg 2x" media="(max-width: 1158px)">
                 
                 <img
                   src="./images/imgTaxi.jpg"
@@ -422,7 +425,7 @@
                 <picture>
                   <source srcset="./images/imgScreen.jpg 1x, ./images/imgScreen-2x.jpg 2x" media="(min-width: 1158px)">
                   <source srcset="./images/imgScreen-tab.jpg 1x, ./images/imgScreen-tab-2x.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/imgScreen-mob.jpg 1x, ./images/imgScreen-mob-2x.jpg 2x" media="(max-width: 1158px)">>
+                  <source srcset="./images/imgScreen-mob.jpg 1x, ./images/imgScreen-mob-2x.jpg 2x" media="(max-width: 1158px)">
                 
                 <img
                   src="./images/imgScreen.jpg"
@@ -448,7 +451,7 @@
 
                   <source srcset="./images/imgCourses.jpg 1x, ./images/imgCourses-2x.jpg 2x" media="(min-width: 1158px)">
                   <source srcset="./images/imgCourses-tab.jpg 1x, ./images/imgCourses-tab-2x.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/imgCourses-mob.jpg 1x, ./images/imgCourses-mob-2x.jpg 2x" media="(max-width: 1158px)">>
+                  <source srcset="./images/imgCourses-mob.jpg 1x, ./images/imgCourses-mob-2x.jpg 2x" media="(max-width: 1158px)">
                 
                 <img
                   src="./images/imgCourses.jpg"
@@ -471,7 +474,7 @@
           </ul>
         </div>
       </section>
-    <!-- </main> -->
+    </main>
 
     <!-- Футер -->
     <footer class="footer">
@@ -618,6 +621,71 @@
         </form>
       </div> -->
     </div>
+
+    <!-- Мобильное меню -->
+  <div class="modal-menu is-open">
+  <button class="menu-close" type="button">
+          <svg class="modal-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+          <ul class="menu-in-modal">
+            <li class="menu-card-in-modal">
+              <a class="menu-link-in-modal current-in-modal" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-card-in-modal">
+              <a class="menu-link-in-modal" href="">Portfolio</a>
+            </li>
+            <li class="menu-card-in-modal">
+              <a class="menu-link-in-modal" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="contacts-in-modal ">
+          <ul class="list-contacts-in-modal">
+            <li class="cards-contacts-in-modal">
+              <a class="cards-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="cards-contacts-in-modal">
+              <a class="cards-contacts-link-in-modal" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+          <ul class="svg-footer-icon-box modal-menu-icon-box" >
+            <li class="svg-footer-icon-wrapper menu-icon-box">
+              <a href="#" class="svg-link-footer ">
+                <svg class="team-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="svg-footer-icon-wrapper menu-icon-box">
+              <a href="#" class="svg-link-footer ">
+                <svg class="team-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="svg-footer-icon-wrapper menu-icon-box">
+              <a href="#" class="svg-link-footer ">
+                <svg class="team-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="svg-footer-icon-wrapper menu-icon-box">
+              <a href="#" class="svg-link-footer ">
+                <svg class="team-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+    </div>
+
   </body>
 </html> 
   
