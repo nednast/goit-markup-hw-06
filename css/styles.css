@@ -313,6 +313,11 @@ body {
   background-color: #404bbf;
 }
 
+@media screen and (max-width: 768px) {
+  .container-team {
+    width: 296px;
+  }
+}
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -546,9 +551,9 @@ body {
   text-align: center;
 }
 
-/* .form-text-footer-wrapper {
+.form-text-footer-wrapper {
   margin-top: 72px;
-} */
+}
 
 .title-form-footer {
   align-items: center;
@@ -1086,6 +1091,9 @@ body {
     text-align: start;
   }
 
+  .form-text-footer-wrapper {
+    margin-top: 0;
+  }
   .title-form-footer {
     text-align: start;
   }
@@ -1093,16 +1101,16 @@ body {
   .footer-form {
     flex-direction: row;
   }
+
+  /* ------------------------------------------------------------------- */
+
+  /* Модалка */
+
+  .modal-window {
+    width: 408px;
+    min-height: 584px;
+  }
 }
-/* ------------------------------------------------------------------- */
-
-/* Модалка */
-
-.modal-window {
-  width: 408px;
-  min-height: 584px;
-}
-
 /* /////////////////////////////////////////////////////////////////////////// */
 
 /* Ноутбук */
@@ -1228,7 +1236,6 @@ body {
   }
 
   .container-footer {
-    width: 100%;
     gap: unset;
   }
 
