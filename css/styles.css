@@ -311,6 +311,7 @@ body {
 
 .svg-icon-wrapper:hover {
   background-color: #404bbf;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -858,6 +859,11 @@ body {
 /* ------------------------------------------------------ */
 
 /* Мобильное меню */
+.modal-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 
 .modal-menu {
   width: 100%;
@@ -875,6 +881,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .menu-in-modal {
